@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Tlocalserviceteam</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+<!-- Navigation Bar -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20">
+<!-- Logo -->
+<div class="flex items-center">
+<img src="image_389662.png" alt="Logo" class="h-16 w-16 object-contain mr-3">
+<span class="font-bold text-xl text-gray-900">Tlocalserviceteam</span>
+</div>
+<!-- Desktop Menu -->
+<div class="hidden md:flex items-center space-x-6 font-medium">
+<a href="index.html" class="text-gray-600 hover:text-amber-600 transition">Home</a>
+<a href="about.html" class="text-gray-600 hover:text-amber-600 transition">About</a>
+<a href="services.html" class="text-gray-600 hover:text-amber-600 transition">Services</a>
+<a href="gallery.html" class="text-amber-600 border-b-2 border-amber-600 pb-1">Gallery</a>
+<a href="book-a-call.html" class="bg-amber-600 text-white px-5 py-2 rounded-full hover:bg-amber-700 transition shadow">Book a Call</a>
+</div>
+<!-- Mobile Menu Button -->
+<div class="flex items-center md:hidden">
+<button id="mobile-menu-btn" class="text-gray-600 hover:text-amber-600 focus:outline-none focus:text-amber-600">
+<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+<path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-2 shadow-lg absolute w-full left-0 z-40">
+<a href="index.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">Home</a>
+<a href="about.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">About</a>
+<a href="services.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">Services</a>
+<a href="gallery.html" class="block py-2.5 px-3 rounded-lg bg-amber-50 text-amber-700 font-bold">Gallery</a>
+<div class="pt-2">
+<a href="book-a-call.html" class="block bg-amber-600 text-white text-center py-3 rounded-lg font-bold hover:bg-amber-700 transition shadow-md">Book a Call</a>
+</div>
+</div>
+</nav>
+<!-- Gallery Content -->
+<main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="text-center mb-12">
+<h1 class="text-4xl font-extrabold text-gray-900 mb-4">Work Gallery</h1>
+<p class="text-gray-600 max-w-2xl mx-auto">See the clear proof of our elite standards. Drag or compare our actual before and after service executions.</p>
+</div>
+<!-- Before After Grid -->
+<div class="space-y-16">
+<!-- Item 1: Duct Cleaning -->
+<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+<h3 class="text-2xl font-bold text-gray-950 mb-4 flex items-center">
+<span class="bg-amber-100 text-amber-700 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+Duct Cleaning
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Before -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Duct Cleaning Before" class="h-64 w-full object-cover brightness-75">
+<span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Before (Dusty Vent)</span>
+</div>
+<!-- After -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Duct Cleaning After" class="h-64 w-full object-cover">
+<span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">After (Pristine Clean)</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Chimney Cleaning -->
+<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+<h3 class="text-2xl font-bold text-gray-950 mb-4 flex items-center">
+<span class="bg-amber-100 text-amber-700 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+Chimney Cleaning
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Before -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1508349682736-22a488c9dfa4?auto=format&fit=crop&w=600&q=80" alt="Chimney Cleaning Before" class="h-64 w-full object-cover brightness-50">
+<span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Before (Soot build-up)</span>
+</div>
+<!-- After -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80" alt="Chimney Cleaning After" class="h-64 w-full object-cover">
+<span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">After (Creosote Removed)</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Carpet Cleaning -->
+<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+<h3 class="text-2xl font-bold text-gray-950 mb-4 flex items-center">
+<span class="bg-amber-100 text-amber-700 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+Carpet Cleaning
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Before -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=600&q=80" alt="Carpet Cleaning Before" class="h-64 w-full object-cover filter saturate-50 brightness-90">
+<span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Before (Stained Fiber)</span>
+</div>
+<!-- After -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="Carpet Cleaning After" class="h-64 w-full object-cover">
+<span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">After (Steam Revitalized)</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Garage Door Repair -->
+<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+<h3 class="text-2xl font-bold text-gray-950 mb-4 flex items-center">
+<span class="bg-amber-100 text-amber-700 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">4</span>
+Garage Door Repair
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Before -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1585915152847-a3a8ee1b75cb?auto=format&fit=crop&w=600&q=80" alt="Garage Door Before" class="h-64 w-full object-cover filter brightness-75">
+<span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Before (Misaligned Tracks)</span>
+</div>
+<!-- After -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=600&q=80" alt="Garage Door After" class="h-64 w-full object-cover">
+<span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">After (Restored & Calibrated)</span>
+</div>
+</div>
+</div>
+<!-- Item 5: Car Detailing -->
+<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+<h3 class="text-2xl font-bold text-gray-950 mb-4 flex items-center">
+<span class="bg-amber-100 text-amber-700 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">5</span>
+Car Detailing
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Before -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80" alt="Car Detailing Before" class="h-64 w-full object-cover filter grayscale-30 brightness-90">
+<span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Before (Dirty Exterior)</span>
+</div>
+<!-- After -->
+<div class="relative rounded-xl overflow-hidden shadow-inner">
+<img src="https://images.unsplash.com/photo-1601362840469-51e4d8d59085?auto=format&fit=crop&w=600&q=80" alt="Car Detailing After" class="h-64 w-full object-cover">
+<span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">After (Deep Wax & Foam Polish)</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<img src="image_389662.png" alt="Logo" class="h-10 w-10 mr-2 filter brightness-110">
+<span class="text-white font-bold text-lg">Tlocalserviceteam</span>
+</div>
+<p class="text-sm">Providing exceptional elite local and professional on-demand solutions tailored around efficiency.</p>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+<li><a href="about.html" class="hover:text-amber-400">About Us</a></li>
+<li><a href="services.html" class="hover:text-amber-400">Services</a></li>
+<li><a href="gallery.html" class="hover:text-amber-400">Gallery</a></li>
+<li><a href="book-a-call.html" class="hover:text-amber-400">Book a Call</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Contact Info</h4>
+<ul class="space-y-2 text-sm">
+<li><i class="fas fa-envelope mr-2 text-amber-500"></i> tlocalserviceteam@gmail.com</li>
+<li><i class="fas fa-phone mr-2 text-amber-500"></i> 513-399-4580</li>
+<li><i class="fab fa-whatsapp mr-2 text-emerald-500"></i> 582-272-3573</li>
+</ul>
+</div>
+</div>
+<div class="text-center text-xs mt-8 border-t border-gray-900 pt-6">
+© 2026 Tlocalserviceteam. All rights reserved.
+</div>
+</footer>
+<!-- Mobile Menu Script -->
+<script>
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const closeIcon = document.getElementById('close-icon');
+menuBtn.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+hamburgerIcon.classList.toggle('hidden');
+closeIcon.classList.toggle('hidden');
+});
+</script>
+</body>
+</html>
