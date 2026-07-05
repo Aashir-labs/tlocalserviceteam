@@ -1,147 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Call | Tlocalserviceteam</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Call | Tlocalserviceteam</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
-
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20">
-                <div class="flex items-center">
-                    <img src="image_389662.png" alt="Logo" class="h-16 w-16 object-contain mr-3">
-                    <span class="font-bold text-xl text-gray-900">Tlocalserviceteam</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8 font-medium">
-                    <a href="index.html" class="text-gray-600 hover:text-amber-600 transition">Home</a>
-                    <a href="about.html" class="text-gray-600 hover:text-amber-600 transition">About</a>
-                    <a href="services.html" class="text-gray-600 hover:text-amber-600 transition">Services</a>
-                    <a href="book-a-call.html" class="bg-amber-600 text-white px-5 py-2 rounded-full hover:bg-amber-700 transition shadow">Book a Call</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Section -->
-    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <!-- Sidebar Details -->
-            <div class="bg-gray-900 text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
-                <div>
-                    <h2 class="text-2xl font-bold mb-4 text-amber-400">Get In Touch</h2>
-                    <p class="text-gray-300 text-sm mb-6">Have questions or looking to scale your maintenance structure? Contact our premium support desk instantly.</p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-envelope text-amber-400 mt-1 mr-3"></i>
-                            <div>
-                                <p class="text-xs text-gray-400 block font-semibold">Email Us</p>
-                                <a href="mailto:tlocalserviceteam@gmail.com" class="text-sm hover:underline">tlocalserviceteam@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-phone text-amber-400 mt-1 mr-3"></i>
-                            <div>
-                                <p class="text-xs text-gray-400 block font-semibold">Call Phone</p>
-                                <a href="tel:513-399-4580" class="text-sm hover:underline">513-399-4580</a>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fab fa-whatsapp text-emerald-400 mt-1 mr-3"></i>
-                            <div>
-                                <p class="text-xs text-gray-400 block font-semibold">WhatsApp Chat</p>
-                                <a href="https://wa.me/5822723573" target="_blank" class="text-sm hover:underline">582-272-3573</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mt-8 pt-6 border-t border-gray-800 text-center">
-                    <img src="image_389662.png" alt="Branding" class="h-20 w-20 mx-auto object-contain">
-                </div>
-            </div>
-
-            <!-- Booking Form -->
-            <div class="bg-white p-8 rounded-xl shadow-md md:col-span-2 border border-gray-100">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Schedule an Appointment</h2>
-                <p class="text-gray-500 text-sm mb-6">Fill the information matrix below, and our scheduling team will follow up within 2 hours.</p>
-
-                <!-- Update action attribute with your form service URL or Formspree ID -->
-                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Full Name</label>
-                        <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm">
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Email Address</label>
-                            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Phone Number</label>
-                            <input type="tel" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Select Service Area</label>
-                        <select name="service_type" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm bg-white">
-                            <option>Electrical Repair & Care</option>
-                            <option>Advanced Plumbing Systems</option>
-                            <option>Premium Deep Sanitization</option>
-                            <option>Other / General Consultation</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Brief Project Details</label>
-                        <textarea name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg shadow transition">
-                        Confirm & Secure Booking
-                    </button>
-                </form>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- Footer same as index.html -->
-    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <div class="flex items-center mb-4">
-                    <img src="image_389662.png" alt="Logo" class="h-10 w-10 mr-2 filter brightness-110">
-                    <span class="text-white font-bold text-lg">Tlocalserviceteam</span>
-                </div>
-                <p class="text-sm">Providing exceptional elite local and professional on-demand solutions tailored around efficiency.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
-                    <li><a href="about.html" class="hover:text-amber-400">About Us</a></li>
-                    <li><a href="services.html" class="hover:text-amber-400">Services</a></li>
-                    <li><a href="book-a-call.html" class="hover:text-amber-400">Book a Call</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-4">Contact Info</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><i class="fas fa-envelope mr-2 text-amber-500"></i> tlocalserviceteam@gmail.com</li>
-                    <li><i class="fas fa-phone mr-2 text-amber-500"></i> 513-399-4580</li>
-                    <li><i class="fab fa-whatsapp mr-2 text-emerald-500"></i> 582-272-3573</li>
-                </ul>
-            </div>
-        </div>
-        <div class="text-center text-xs mt-8 border-t border-gray-900 pt-6">
-            &copy; 2026 Tlocalserviceteam. All rights reserved.
-        </div>
-    </footer>
-
+<!-- Navigation Bar -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20">
+<!-- Logo -->
+<div class="flex items-center">
+<img src="image_389662.png" alt="Logo" class="h-16 w-16 object-contain mr-3">
+<span class="font-bold text-xl text-gray-900">Tlocalserviceteam</span>
+</div>
+<!-- Desktop Menu -->
+<div class="hidden md:flex items-center space-x-6 font-medium">
+<a href="index.html" class="text-gray-600 hover:text-amber-600 transition">Home</a>
+<a href="about.html" class="text-gray-600 hover:text-amber-600 transition">About</a>
+<a href="services.html" class="text-gray-600 hover:text-amber-600 transition">Services</a>
+<a href="gallery.html" class="text-gray-600 hover:text-amber-600 transition">Gallery</a>
+<a href="book-a-call.html" class="bg-amber-600 text-white px-5 py-2 rounded-full hover:bg-amber-700 transition shadow">Book a Call</a>
+</div>
+<!-- Mobile Menu Button -->
+<div class="flex items-center md:hidden">
+<button id="mobile-menu-btn" class="text-gray-600 hover:text-amber-600 focus:outline-none focus:text-amber-600">
+<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+<path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-2 shadow-lg absolute w-full left-0 z-40">
+<a href="index.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">Home</a>
+<a href="about.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">About</a>
+<a href="services.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">Services</a>
+<a href="gallery.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">Gallery</a>
+<div class="pt-2">
+<a href="book-a-call.html" class="block bg-amber-600 text-white text-center py-3 rounded-lg font-bold hover:bg-amber-700 transition shadow-md">Book a Call</a>
+</div>
+</div>
+</nav>
+<!-- Main Section -->
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Sidebar Details -->
+<div class="bg-gray-900 text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+<div>
+<h2 class="text-2xl font-bold mb-4 text-amber-400">Get In Touch</h2>
+<p class="text-gray-300 text-sm mb-6">Have questions or looking to scale your maintenance structure? Contact our premium support desk instantly.</p>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="fas fa-envelope text-amber-400 mt-1 mr-3"></i>
+<div>
+<p class="text-xs text-gray-400 block font-semibold">Email Us</p>
+<a href="mailto:tlocalserviceteam@gmail.com" class="text-sm hover:underline">tlocalserviceteam@gmail.com</a>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-phone text-amber-400 mt-1 mr-3"></i>
+<div>
+<p class="text-xs text-gray-400 block font-semibold">Call Phone</p>
+<a href="tel:513-399-4580" class="text-sm hover:underline">513-399-4580</a>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fab fa-whatsapp text-emerald-400 mt-1 mr-3"></i>
+<div>
+<p class="text-xs text-gray-400 block font-semibold">WhatsApp Chat</p>
+<a href="https://wa.me/5822723573" target="_blank" class="text-sm hover:underline">582-272-3573</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-gray-800 text-center">
+<img src="image_389662.png" alt="Branding" class="h-20 w-20 mx-auto object-contain">
+</div>
+</div>
+<!-- Booking Form -->
+<div class="bg-white p-8 rounded-xl shadow-md md:col-span-2 border border-gray-100">
+<h2 class="text-2xl font-bold text-gray-900 mb-2">Schedule an Appointment</h2>
+<p class="text-gray-500 text-sm mb-6">Fill the information matrix below, and our scheduling team will follow up within 2 hours.</p>
+<form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-4">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Full Name</label>
+<input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Email Address</label>
+<input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm">
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Phone Number</label>
+<input type="tel" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm">
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Select Service Area</label>
+<select name="service_type" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm bg-white">
+<option>Duct Cleaning</option>
+<option>Chimney Cleaning</option>
+<option>Carpet Cleaning</option>
+<option>Garage Door Repair</option>
+<option>Car Detailing</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Brief Project Details</label>
+<textarea name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm"></textarea>
+</div>
+<button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg shadow transition">
+Confirm & Secure Booking
+</button>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<img src="image_389662.png" alt="Logo" class="h-10 w-10 mr-2 filter brightness-110">
+<span class="text-white font-bold text-lg">Tlocalserviceteam</span>
+</div>
+<p class="text-sm">Providing exceptional elite local and professional on-demand solutions tailored around efficiency.</p>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+<li><a href="about.html" class="hover:text-amber-400">About Us</a></li>
+<li><a href="services.html" class="hover:text-amber-400">Services</a></li>
+<li><a href="gallery.html" class="hover:text-amber-400">Gallery</a></li>
+<li><a href="book-a-call.html" class="hover:text-amber-400">Book a Call</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Contact Info</h4>
+<ul class="space-y-2 text-sm">
+<li><i class="fas fa-envelope mr-2 text-amber-500"></i> tlocalserviceteam@gmail.com</li>
+<li><i class="fas fa-phone mr-2 text-amber-500"></i> 513-399-4580</li>
+<li><i class="fab fa-whatsapp mr-2 text-emerald-500"></i> 582-272-3573</li>
+</ul>
+</div>
+</div>
+<div class="text-center text-xs mt-8 border-t border-gray-900 pt-6">
+© 2026 Tlocalserviceteam. All rights reserved.
+</div>
+</footer>
+<!-- Mobile Menu Script -->
+<script>
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const closeIcon = document.getElementById('close-icon');
+menuBtn.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+hamburgerIcon.classList.toggle('hidden');
+closeIcon.classList.toggle('hidden');
+});
+</script>
 </body>
 </html>
