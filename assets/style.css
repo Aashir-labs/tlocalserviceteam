@@ -363,6 +363,8 @@
 @media (max-width: 480px) {
   .gallery-grid { grid-template-columns: 1fr; }
 }
+
+/* Service card images */
 .service-img img {
   width: 100%;
   height: 100%;
@@ -371,6 +373,7 @@
   display: block;
 }
 
+/* Why Us SVG icons */
 .why-icon svg {
   color: var(--navy);
   opacity: 0.75;
