@@ -363,7 +363,6 @@
 @media (max-width: 480px) {
   .gallery-grid { grid-template-columns: 1fr; }
 }
-
 .service-img img {
   width: 100%;
   height: 100%;
