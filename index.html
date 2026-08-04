@@ -1,197 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | Tlocalserviceteam</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TLocalServiceTeam | Same-Day Air Duct, Roofing, Locksmith & Repair — Free Estimates</title>
+<meta name="description" content="Licensed & insured home service pros. Air duct cleaning, roofing, garage door repair, locksmith & more. Same-day availability. Call now for a free estimate." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
 </head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
-<!-- Navigation -->
-<nav class="bg-white shadow-md sticky top-0 z-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between h-20">
-<!-- Logo & Brand -->
-<div class="flex items-center">
-<img src="image_389662.png" alt="Tlocalserviceteam Logo" class="h-16 w-16 object-contain mr-3">
-<span class="font-bold text-xl tracking-tight text-gray-900">Tlocalserviceteam</span>
-</div>
-<!-- Desktop Menu -->
-<div class="hidden md:flex items-center space-x-6 font-medium">
-<a href="index.html" class="text-amber-600 border-b-2 border-amber-600 pb-1">Home</a>
-<a href="about.html" class="text-gray-600 hover:text-amber-600 transition">About</a>
-<a href="services.html" class="text-gray-600 hover:text-amber-600 transition">Services</a>
-<a href="gallery.html" class="text-gray-600 hover:text-amber-600 transition">Gallery</a>
-<a href="book-a-call.html" class="bg-amber-600 text-white px-5 py-2 rounded-full hover:bg-amber-700 transition shadow">Book a Call</a>
-</div>
-<!-- Mobile Menu Button -->
-<div class="flex items-center md:hidden">
-<button id="mobile-menu-btn" class="text-gray-600 hover:text-amber-600 focus:outline-none focus:text-amber-600">
-<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-<path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-<path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-</svg>
-</button>
-</div>
-</div>
-</div>
-<!-- Mobile Dynamic Dropdown Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-2 shadow-lg absolute w-full left-0 z-40">
-<a href="index.html" class="block py-2.5 px-3 rounded-lg bg-amber-50 text-amber-700 font-bold">Home</a>
-<a href="about.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">About</a>
-<a href="services.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">Services</a>
-<a href="gallery.html" class="block py-2.5 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-amber-600 font-medium transition">Gallery</a>
-<div class="pt-2">
-<a href="book-a-call.html" class="block bg-amber-600 text-white text-center py-3 rounded-lg font-bold hover:bg-amber-700 transition shadow-md">Book a Call</a>
-</div>
-</div>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.jpg" alt="TLocal Service Team" class="nav-logo-img" />
+  </a>
+  <ul class="nav-links">
+    <li class="has-dropdown">
+      <a href="#services" class="dropdown-toggle">Services <span class="caret">▼</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="air-duct-cleaning.html">🌬️ Air Duct Cleaning</a></li>
+        <li><a href="garage-door-repair.html">🚪 Garage Door Repair</a></li>
+        <li><a href="carpet-cleaning.html">🧹 Carpet Cleaning</a></li>
+        <li><a href="roofing.html">🏗️ Roofing Services</a></li>
+        <li><a href="locksmith.html">🔑 Expert Locksmiths</a></li>
+        <li><a href="home-remodeling.html">🏠 Home Remodeling</a></li>
+      </ul>
+    </li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="#why-us">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="#contact" class="btn-outline-nav">Free Quote</a>
+    <a href="tel:+12146178689" class="btn-phone-nav">📞 Call Now</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
-<!-- Hero Section -->
-<header class="bg-gray-900 text-white py-24 px-4 text-center relative overflow-hidden">
-<div class="absolute inset-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center"></div>
-<div class="relative max-w-4xl mx-auto z-10">
-<span class="bg-amber-500/10 text-amber-400 font-bold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full border border-amber-500/30 mb-6 inline-block">Premium Local Support</span>
-<h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-amber-400">Professional Home & Local Services</h1>
-<p class="text-lg md:text-xl mb-8 text-gray-300">Your trusted partner for duct cleaning, chimney cleaning, carpet grooming, garage repairs, and high-end car detailing.</p>
-<div class="flex flex-wrap justify-center gap-4">
-<a href="book-a-call.html" class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold px-8 py-3.5 rounded-lg shadow-lg transition transform hover:-translate-y-0.5">Get a Free Quote</a>
-<a href="services.html" class="border-2 border-white/80 hover:bg-white hover:text-gray-900 text-white font-bold px-8 py-3.5 rounded-lg transition">Our Services</a>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-submenu-toggle" onclick="toggleMobileSubmenu(this)">Services <span class="caret">▼</span></button>
+  <div class="mobile-submenu">
+    <a href="air-duct-cleaning.html">🌬️ Air Duct Cleaning</a>
+    <a href="garage-door-repair.html">🚪 Garage Door Repair</a>
+    <a href="carpet-cleaning.html">🧹 Carpet Cleaning</a>
+    <a href="roofing.html">🏗️ Roofing Services</a>
+    <a href="locksmith.html">🔑 Expert Locksmiths</a>
+    <a href="home-remodeling.html">🏠 Home Remodeling</a>
+  </div>
+  <a href="gallery.html" onclick="toggleMenu()">Gallery</a>
+  <a href="#why-us" onclick="toggleMenu()">Why Us</a>
+  <a href="#process" onclick="toggleMenu()">Process</a>
+  <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="tel:+12146178689" class="mobile-cta">📞 Call Now — Free Estimate</a>
 </div>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner" id="tickerInner">
+    <span>✓ Licensed & Insured</span>
+    <span>⚡ Same-Day Service</span>
+    <span>$ Transparent Pricing</span>
+    <span>★ 4.9/5 Rating</span>
+    <span>🏠 Air Duct Cleaning</span>
+    <span>🚪 Garage Door Repair</span>
+    <span>🔑 Locksmith</span>
+    <span>🏗️ Roofing</span>
+    <span>🧹 Carpet Cleaning</span>
+    <span>💡 Insulation</span>
+    <span>✓ Licensed & Insured</span>
+    <span>⚡ Same-Day Service</span>
+    <span>$ Transparent Pricing</span>
+    <span>★ 4.9/5 Rating</span>
+    <span>🏠 Air Duct Cleaning</span>
+    <span>🚪 Garage Door Repair</span>
+    <span>🔑 Locksmith</span>
+    <span>🏗️ Roofing</span>
+    <span>🧹 Carpet Cleaning</span>
+    <span>💡 Insulation</span>
+  </div>
 </div>
-</header>
-<!-- Why Choose Section -->
-<main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-<div class="text-center mb-12">
-<h2 class="text-3xl font-extrabold text-gray-900 md:text-4xl">Why Choose Tlocalserviceteam?</h2>
-<p class="text-gray-600 mt-3 max-w-2xl mx-auto">Providing certified elite restoration, maintenance, and diagnostics across residential and commercial setups.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-<div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-amber-500">
-<div class="text-amber-500 text-3xl mb-4"><i class="fas fa-shield-alt"></i></div>
-<h3 class="text-xl font-bold mb-2">Trusted Specialists</h3>
-<p class="text-gray-600">Every single technician is heavily vetted, trained, and safety certified to handle delicate equipment in your home.</p>
-</div>
-<div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-amber-500">
-<div class="text-amber-500 text-3xl mb-4"><i class="fas fa-history"></i></div>
-<h3 class="text-xl font-bold mb-2">Before & After Guarantee</h3>
-<p class="text-gray-600">We document our quality workflow. Get full digital proof of our high-standard cleaning and repair jobs.</p>
-</div>
-<div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-amber-500">
-<div class="text-amber-500 text-3xl mb-4"><i class="fas fa-calendar-check"></i></div>
-<h3 class="text-xl font-bold mb-2">Same Day Booking</h3>
-<p class="text-gray-600">Instant reservation matrix, fast emergency dispatches, and punctual arrivals on every assignment.</p>
-</div>
-</div>
-<!-- REVIEWS SECTION -->
-<section class="bg-gray-100 rounded-2xl py-12 px-6 md:px-12">
-<div class="text-center mb-10">
-<span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-2">Testimonials</span>
-<h2 class="text-3xl font-bold text-gray-950">Real Customer Reviews</h2>
-<div class="w-16 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Review 1 -->
-<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-<div>
-<div class="flex text-amber-500 mb-3 space-x-1">
-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-</div>
-<p class="text-gray-600 text-sm italic mb-4">"Exceptional duct cleaning service. They showed me the before and after camera inspection, and the difference is massive. My HVAC airflow feels incredibly clean now. Highly recommended!"</p>
-</div>
-<div class="flex items-center mt-4 pt-4 border-t border-gray-100">
-<div class="bg-amber-100 text-amber-700 font-bold rounded-full w-10 h-10 flex items-center justify-center mr-3 text-sm">
-JD
-</div>
-<div>
-<h4 class="font-bold text-sm text-gray-950">John Doe</h4>
-<p class="text-xs text-gray-400">Duct Cleaning Client</p>
-</div>
-</div>
-</div>
-<!-- Review 2 -->
-<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-<div>
-<div class="flex text-amber-500 mb-3 space-x-1">
-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-</div>
-<p class="text-gray-600 text-sm italic mb-4">"Our chimney had soot build-up for 3 years. These guys came and left it absolutely spotless. No mess left behind, very clean, and extremely polite technicians!"</p>
-</div>
-<div class="flex items-center mt-4 pt-4 border-t border-gray-100">
-<div class="bg-amber-100 text-amber-700 font-bold rounded-full w-10 h-10 flex items-center justify-center mr-3 text-sm">
-MS
-</div>
-<div>
-<h4 class="font-bold text-sm text-gray-950">Mark Smith</h4>
-<p class="text-xs text-gray-400">Chimney Sweep Client</p>
-</div>
-</div>
-</div>
-<!-- Review 3 -->
-<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-<div>
-<div class="flex text-amber-500 mb-3 space-x-1">
-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-</div>
-<p class="text-gray-600 text-sm italic mb-4">"My garage door spring snapped suddenly. Called Tlocalserviceteam, and they had a mechanic at my house within an hour. Fast service and extremely reasonable pricing."</p>
-</div>
-<div class="flex items-center mt-4 pt-4 border-t border-gray-100">
-<div class="bg-amber-100 text-amber-700 font-bold rounded-full w-10 h-10 flex items-center justify-center mr-3 text-sm">
-RH
-</div>
-<div>
-<h4 class="font-bold text-sm text-gray-950">Robert H.</h4>
-<p class="text-xs text-gray-400">Garage Door Client</p>
-</div>
-</div>
-</div>
-</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">⭐ Trusted Since 2019</div>
+      <h1><em>TLocalServiceTeam</em><br/>Your Home, Our Priority</h1>
+      <p class="hero-sub">Licensed & insured home service pros. Air duct cleaning, roofing, garage door repair, locksmith & more. Same-day availability. Free estimates — no surprise charges.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Get Free Estimate →</a>
+        <a href="tel:+12146178689" class="btn-secondary">📞 Call Now</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">✓ Licensed & Insured</span>
+        <span class="badge">⚡ Same-Day Available</span>
+        <span class="badge">$ Upfront Pricing</span>
+        <span class="badge">★ Satisfaction Guaranteed</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="stat-card">
+        <div class="stat-grid">
+          <div class="stat-item">
+            <div class="stat-num">15K+</div>
+            <div class="stat-label">Jobs Done</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4.9★</div>
+            <div class="stat-label">Avg Rating</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">70+</div>
+            <div class="stat-label">Cities Served</div>
+          </div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <ul class="trust-list">
+          <li>Background-checked, licensed technicians</li>
+          <li>Written quotes — price never changes mid-job</li>
+          <li>Real person answers every call, no bots</li>
+          <li>Most jobs scheduled within 24 hours</li>
+          <li>We clean up completely after every job</li>
+        </ul>
+        <div class="stars-row" style="margin-top:18px;">
+          <span class="stars">★★★★★</span>
+          <span class="review-text">4.9/5 — 100+ verified reviews</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-</main>
-<!-- Footer -->
-<footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-<div>
-<div class="flex items-center mb-4">
-<img src="image_389662.png" alt="Logo" class="h-10 w-10 mr-2 filter brightness-110">
-<span class="text-white font-bold text-lg">Tlocalserviceteam</span>
-</div>
-<p class="text-sm">Providing exceptional elite local and professional on-demand solutions tailored around efficiency.</p>
-</div>
-<div>
-<h4 class="text-white font-semibold mb-4">Quick Links</h4>
-<ul class="space-y-2 text-sm">
-<li><a href="index.html" class="hover:text-amber-400">Home</a></li>
-<li><a href="about.html" class="hover:text-amber-400">About Us</a></li>
-<li><a href="services.html" class="hover:text-amber-400">Services</a></li>
-<li><a href="gallery.html" class="hover:text-amber-400">Gallery</a></li>
-<li><a href="book-a-call.html" class="hover:text-amber-400">Book a Call</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-white font-semibold mb-4">Contact Info</h4>
-<ul class="space-y-2 text-sm">
-<li><i class="fas fa-envelope mr-2 text-amber-500"></i> tlocalserviceteam@gmail.com</li>
-<li><i class="fas fa-phone mr-2 text-amber-500"></i> 513-399-4580</li>
-<li><i class="fab fa-whatsapp mr-2 text-emerald-500"></i> 582-272-3573</li>
-</ul>
-</div>
-</div>
-<div class="text-center text-xs mt-8 border-t border-gray-900 pt-6">
-© 2026 Tlocalserviceteam. All rights reserved.
-</div>
+
+<!-- SERVICES -->
+<section class="services-bg" id="services">
+  <div class="section-inner">
+    <div class="text-center">
+      <span class="section-label">Our Services</span>
+      <h2 class="section-title">America's Trusted Choice for <em>Complete Home Services</em></h2>
+      <p class="section-sub">From air ducts to rooftops — we handle it all with licensed technicians, transparent pricing, and a satisfaction guarantee.</p>
+    </div>
+    <div class="services-grid">
+      <a href="air-duct-cleaning.html" class="service-card">
+        <div class="service-img">🌬️</div>
+        <div class="service-body">
+          <h3>Air Duct Cleaning</h3>
+          <p>Improve indoor air quality and HVAC efficiency with professional duct inspection, deep cleaning, and repair services.</p>
+          <span class="service-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="garage-door-repair.html" class="service-card">
+        <div class="service-img">🚪</div>
+        <div class="service-body">
+          <h3>Garage Door Repair</h3>
+          <p>Reliable garage door repair, opener replacement, spring repair, and full maintenance for safe daily operation.</p>
+          <span class="service-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="carpet-cleaning.html" class="service-card">
+        <div class="service-img">🧹</div>
+        <div class="service-body">
+          <h3>Carpet Cleaning</h3>
+          <p>Deep carpet cleaning that removes dirt, stains, allergens, and odors while restoring freshness to your home.</p>
+          <span class="service-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="roofing.html" class="service-card">
+        <div class="service-img">🏗️</div>
+        <div class="service-body">
+          <h3>Roofing Services</h3>
+          <p>Professional roof repair, installation, inspections, and maintenance to protect your home year-round from weather damage.</p>
+          <span class="service-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="locksmith.html" class="service-card">
+        <div class="service-img">🔑</div>
+        <div class="service-body">
+          <h3>Expert Locksmiths</h3>
+          <p>Fast and reliable lock repair, key replacement, emergency lockout assistance, and full security solutions.</p>
+          <span class="service-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="home-remodeling.html" class="service-card">
+        <div class="service-img">🏠</div>
+        <div class="service-body">
+          <h3>Home Remodeling</h3>
+          <p>Transform your living space with expert kitchen, bathroom, flooring, and complete interior remodeling services.</p>
+          <span class="service-link">Learn More →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why-us">
+  <div class="section-inner">
+    <div class="text-center">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title">What Makes <em>TLocalServiceTeam</em> a Better Choice?</h2>
+      <p class="section-sub">Every technician is ours — not a random subcontractor. We've been building trust with homeowners since 2019.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🏅</div>
+        <h3>Our Employees — Not Random Subcontractors</h3>
+        <p>Every technician is licensed, insured, and background-checked. These are our people — not strangers we barely know.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔍</div>
+        <h3>Inspection Before Every Job</h3>
+        <p>We start with a thorough inspection so you know exactly what's wrong and what it'll cost — before a single tool comes out.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <h3>Pricing That Doesn't Move</h3>
+        <p>Upfront quotes that stick. If we find something extra mid-job, we stop, tell you, and quote it separately first.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📞</div>
+        <h3>A Real Person Always Picks Up</h3>
+        <p>Call us and a real person answers — no bots, no voicemail maze, no runaround. Ever.</p>
+      </div>
+    </div>
+    <div class="why-stats">
+      <div class="why-stat">
+        <div class="why-stat-num">7 Years</div>
+        <div class="why-stat-label">Staying power built on repeat customers & referrals</div>
+      </div>
+      <div class="why-stat">
+        <div class="why-stat-num">24hr</div>
+        <div class="why-stat-label">Most jobs scheduled within 24 hours</div>
+      </div>
+      <div class="why-stat">
+        <div class="why-stat-num">100%</div>
+        <div class="why-stat-label">Satisfaction guarantee — we finish what we start</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-bg" id="process">
+  <div class="section-inner">
+    <div class="text-center">
+      <span class="section-label" style="background:rgba(232,160,32,0.2);">How It Works</span>
+      <h2 class="section-title">Hassle-Free <em>Home Service Process</em></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.65);">Three simple steps from first call to finished job — with zero surprises along the way.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Call or Book Online</h3>
+        <p>A real person answers every call. Most jobs are scheduled within 24 hours. Same-day available for emergencies.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Inspection & Written Quote</h3>
+        <p>We inspect first, tell you exactly what's wrong, and give you a written quote before touching anything. No pressure, no surprises.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Job Done. Stays Done.</h3>
+        <p>We complete the work, clean up completely, and follow up. If something isn't right, we come back — no arguments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-inner">
+    <div class="text-center">
+      <span class="section-label">Customer Reviews</span>
+      <h2 class="section-title">Real Words from <em>Real Homeowners</em></h2>
+      <p class="section-sub">Don't just take our word for it — here's what our customers say after we've done the work.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text-body">"They cleaned our air ducts and explained every step clearly. The whole house feels fresher and the HVAC is running so much better. On time, as promised."</p>
+        <div class="review-author">
+          <div class="review-avatar">M</div>
+          <div>
+            <div class="review-name">Michael R.</div>
+            <div class="review-city">Atlanta, GA</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text-body">"Hired them for carpet cleaning before moving in. Stains and odors completely gone. The price they quoted was the price we paid — not a cent more."</p>
+        <div class="review-author">
+          <div class="review-avatar">J</div>
+          <div>
+            <div class="review-name">Jennifer L.</div>
+            <div class="review-city">Houston, TX</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text-body">"Garage door broke at 7 AM and they were there same day. Had the parts on the truck and fixed everything in one visit. This is how a contractor should operate."</p>
+        <div class="review-author">
+          <div class="review-avatar">S</div>
+          <div>
+            <div class="review-name">Sarah T.</div>
+            <div class="review-city">Phoenix, AZ</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text-body">"Roofing team was fast and knowledgeable. They handled storm damage and left my driveway cleaner than when they arrived. No piles of old shingles — that's rare."</p>
+        <div class="review-author">
+          <div class="review-avatar">D</div>
+          <div>
+            <div class="review-name">David M.</div>
+            <div class="review-city">Dallas, TX</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text-body">"Insulation service made a huge difference in our energy bills. They told us the right fix — not the most expensive one. That kind of honesty is hard to find."</p>
+        <div class="review-author">
+          <div class="review-avatar">R</div>
+          <div>
+            <div class="review-name">Robert C.</div>
+            <div class="review-city">Denver, CO</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text-body">"Kitchen remodel from demolition to finish — on budget, great communication. Sounds basic, but apparently that's a high bar. Not for TLocalServiceTeam."</p>
+        <div class="review-author">
+          <div class="review-avatar">A</div>
+          <div>
+            <div class="review-name">Amanda K.</div>
+            <div class="review-city">Miami, FL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CITIES -->
+<section class="cities-bg">
+  <div class="section-inner">
+    <div class="text-center">
+      <span class="section-label">Locations</span>
+      <h2 class="section-title">Serving All Major <em>U.S. Cities</em></h2>
+    </div>
+    <div class="cities-wrap">
+      <span class="city-chip">Atlanta, GA</span>
+      <span class="city-chip">Austin, TX</span>
+      <span class="city-chip">Boston, MA</span>
+      <span class="city-chip">Charlotte, NC</span>
+      <span class="city-chip">Chicago, IL</span>
+      <span class="city-chip">Cleveland, OH</span>
+      <span class="city-chip">Dallas, TX</span>
+      <span class="city-chip">Denver, CO</span>
+      <span class="city-chip">Fort Lauderdale, FL</span>
+      <span class="city-chip">Houston, TX</span>
+      <span class="city-chip">Indianapolis, IN</span>
+      <span class="city-chip">Jacksonville, FL</span>
+      <span class="city-chip">Las Vegas, NV</span>
+      <span class="city-chip">Los Angeles, CA</span>
+      <span class="city-chip">Miami, FL</span>
+      <span class="city-chip">Minneapolis, MN</span>
+      <span class="city-chip">Nashville, TN</span>
+      <span class="city-chip">New York, NY</span>
+      <span class="city-chip">Orlando, FL</span>
+      <span class="city-chip">Philadelphia, PA</span>
+      <span class="city-chip">Phoenix, AZ</span>
+      <span class="city-chip">Portland, OR</span>
+      <span class="city-chip">Raleigh, NC</span>
+      <span class="city-chip">Sacramento, CA</span>
+      <span class="city-chip">San Antonio, TX</span>
+      <span class="city-chip">San Diego, CA</span>
+      <span class="city-chip">San Francisco, CA</span>
+      <span class="city-chip">Seattle, WA</span>
+      <span class="city-chip">Tampa, FL</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="text-center">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Questions Homeowners <em>Ask Us</em> Before Booking</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you charge for the initial inspection?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">In most cases, no — the inspection is part of the service visit. We'll always tell you upfront before anyone comes out if there's a charge involved.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How fast can you visit if it's an emergency?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">Every job is generally scheduled within 24 to 48 hours. For emergencies like a lockout or a garage door that won't close, we do everything we can to get there the same day.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Does your pricing change once the job starts?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">We quote before we start, and that number sticks. If we find something additional mid-job, we stop, tell you what we found, and quote it separately before touching it.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          I've been burned by contractors before. What makes you different?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">We can't just tell you — we have to show you. Our technicians are background-checked employees, our pricing is quoted in writing, and seven years of repeat customers is the best proof we have.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you cover my area?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">We serve homeowners across the country. Call us with your zip code and we'll confirm in seconds — most people find we're already in their area.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BOTTOM -->
+<section class="cta-bottom" id="contact">
+  <div style="max-width:700px;margin:0 auto;">
+    <h2>Call TLocalServiceTeam Today</h2>
+    <p>Whether it's the carpet you avoid looking at or the roof you've been "keeping an eye on" — we're straightforward to reach, honest about costs, and we finish what we start.</p>
+    <div class="cta-btns">
+      <a href="tel:+12146178689" class="btn-primary" style="font-size:1rem;">📞 Call Now — It's Free</a>
+      <a href="mailto:info@tlocalserviceteam.com" class="btn-secondary">✉️ Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+        <div style="width:38px;height:38px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--navy);font-size:1.1rem;">T</div>
+        <div>
+          <div style="color:#fff;font-weight:800;font-size:1rem;">TLocalServiceTeam</div>
+          <div style="color:var(--accent);font-size:0.65rem;letter-spacing:1.5px;text-transform:uppercase;">Trusted Since 2019</div>
+        </div>
+      </div>
+      <p>America's trusted home repair, maintenance, and inspection experts. From coast to coast — quality service you can count on.</p>
+      <div class="footer-contact">
+        <a href="tel:+12146178689">📞 Appointments: (214) 617-8689</a>
+        <a href="tel:+15822723573">📞 Complaints: (582) 272-3573</a>
+        <a href="mailto:info@tlocalserviceteam.com">✉️ info@tlocalserviceteam.com</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="air-duct-cleaning.html">Air Duct Cleaning</a></li>
+        <li><a href="garage-door-repair.html">Garage Door Repair</a></li>
+        <li><a href="carpet-cleaning.html">Carpet Cleaning</a></li>
+        <li><a href="roofing.html">Roofing</a></li>
+        <li><a href="locksmith.html">Locksmith</a></li>
+        <li><a href="home-remodeling.html">Home Remodeling</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#why-us">About Us</a></li>
+        <li><a href="#services">All Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <ul>
+        <li><a href="tel:+12146178689">📞 Call Us Now</a></li>
+        <li><a href="#contact">💬 Request a Quote</a></li>
+        <li><a href="tel:+12146178689">⚡ Emergency? Call Now</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 TLocalServiceTeam. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
 </footer>
-<!-- Mobile Menu Toggle Script -->
-<script>
-const menuBtn = document.getElementById('mobile-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const hamburgerIcon = document.getElementById('hamburger-icon');
-const closeIcon = document.getElementById('close-icon');
-menuBtn.addEventListener('click', () => {
-mobileMenu.classList.toggle('hidden');
-hamburgerIcon.classList.toggle('hidden');
-closeIcon.classList.toggle('hidden');
-});
-</script>
+
+<!-- SCROLL TOP -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
