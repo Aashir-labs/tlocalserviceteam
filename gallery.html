@@ -4,14 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Gallery | TLocal Service Team</title>
-<meta name="description" content="See our work — Air Duct Cleaning, Chimney Cleaning, Carpet Cleaning, Garage Doors, and Car Detailing before & after photos." />
+<meta name="description" content="Before & after photos — air duct, chimney, carpet, garage door, and car detailing." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-
-<!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo">
     <img src="assets/logo.jpg" alt="TLocal Service Team" class="nav-logo-img" />
@@ -35,252 +33,99 @@
   </ul>
   <div class="nav-cta">
     <a href="index.html#contact" class="btn-outline-nav">Free Quote</a>
-    <a href="tel:+12146178689" class="btn-phone-nav">📞 Call Now</a>
+    <a href="tel:+15133994580" class="btn-phone-nav">📞 Call Now</a>
   </div>
   <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
-
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-submenu-toggle" onclick="toggleMobileSubmenu(this)">Services <span class="caret">▼</span></button>
   <div class="mobile-submenu">
-    <a href="air-duct-cleaning.html">Air Duct Cleaning</a>
-    <a href="chimney-cleaning.html">Chimney Cleaning</a>
-    <a href="carpet-cleaning.html">Carpet Cleaning</a>
-    <a href="garage-door-repair.html">Garage Door Repair</a>
-    <a href="car-detailing.html">Car Detailing</a>
+    <a href="air-duct-cleaning.html" onclick="toggleMenu()">Air Duct Cleaning</a>
+    <a href="chimney-cleaning.html" onclick="toggleMenu()">Chimney Cleaning</a>
+    <a href="carpet-cleaning.html" onclick="toggleMenu()">Carpet Cleaning</a>
+    <a href="garage-door-repair.html" onclick="toggleMenu()">Garage Door Repair</a>
+    <a href="car-detailing.html" onclick="toggleMenu()">Car Detailing</a>
   </div>
   <a href="gallery.html" onclick="toggleMenu()">Gallery</a>
   <a href="index.html#why-us" onclick="toggleMenu()">Why Us</a>
   <a href="index.html#process" onclick="toggleMenu()">Process</a>
   <a href="index.html#reviews" onclick="toggleMenu()">Reviews</a>
   <a href="index.html#faq" onclick="toggleMenu()">FAQ</a>
-  <a href="tel:+12146178689" class="mobile-cta">📞 Call Now — Free Estimate</a>
+  <a href="tel:+15133994580" class="mobile-cta">📞 Call Now — Free Estimate</a>
 </div>
-
-<!-- TICKER -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-inner">
-    <span>✓ Licensed &amp; Insured</span><span>⚡ Same-Day Service</span>
-    <span>$ Transparent Pricing</span><span>★ 4.9/5 Rating</span>
-    <span>🌬️ Air Duct Cleaning</span><span>🏠 Chimney Cleaning</span>
-    <span>🧹 Carpet Cleaning</span><span>🚪 Garage Doors</span><span>🚗 Car Detailing</span>
-    <span>✓ Licensed &amp; Insured</span><span>⚡ Same-Day Service</span>
-    <span>$ Transparent Pricing</span><span>★ 4.9/5 Rating</span>
-    <span>🌬️ Air Duct Cleaning</span><span>🏠 Chimney Cleaning</span>
-    <span>🧹 Carpet Cleaning</span><span>🚪 Garage Doors</span><span>🚗 Car Detailing</span>
-  </div>
-</div>
-
-<!-- HERO -->
+<div class="ticker" aria-hidden="true"><div class="ticker-inner"><span>✓ Licensed &amp; Insured</span> <span>⚡ Same-Day Service</span> <span>$ Transparent Pricing</span> <span>★ 4.9/5 Rating</span> <span>Air Duct Cleaning</span> <span>Chimney Cleaning</span> <span>Carpet Cleaning</span> <span>Garage Door Repair</span> <span>Car Detailing</span> <span>✓ Licensed &amp; Insured</span> <span>⚡ Same-Day Service</span> <span>$ Transparent Pricing</span> <span>★ 4.9/5 Rating</span> <span>Air Duct Cleaning</span> <span>Chimney Cleaning</span> <span>Carpet Cleaning</span> <span>Garage Door Repair</span> <span>Car Detailing</span></div></div>
 <div class="gallery-hero">
   <span class="section-label" style="background:rgba(232,160,32,0.2);color:var(--accent);">Our Work</span>
   <h1>Real Jobs. <em>Real Results.</em></h1>
-  <p>Before & after photos from actual jobs — air ducts, chimneys, carpets, garage doors, and car detailing across the country.</p>
+  <p>Before &amp; after photos from actual jobs across the country.</p>
 </div>
-
-<!-- BREADCRUMB -->
-<div class="breadcrumb" style="padding-top:20px;">
-  <a href="index.html">Home</a> / <span style="color:var(--navy);font-weight:600;">Gallery</span>
-</div>
-
-<!-- JUMP LINKS -->
-<div style="display:flex;flex-wrap:wrap;gap:10px;padding:24px 5%;max-width:1200px;margin:0 auto;">
-  <a href="#gallery-air-duct" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">🌬️ Air Duct</a>
-  <a href="#gallery-chimney" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">🏠 Chimney</a>
-  <a href="#gallery-carpet" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">🧹 Carpet</a>
-  <a href="#gallery-garage" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">🚪 Garage Doors</a>
-  <a href="#gallery-car" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">🚗 Car Detailing</a>
-</div>
-
-<!-- SECTION: AIR DUCT CLEANING -->
-<section class="gallery-section" id="gallery-air-duct">
+<div class="breadcrumb" style="padding-top:20px;"><a href="index.html">Home</a> / <span style="color:var(--navy);font-weight:600;">Gallery</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:10px;padding:24px 5%;max-width:1200px;margin:0 auto;"><a href="#gallery-duct" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">🌬 Air Duct Cleaning</a><a href="#gallery-chimney" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">🏠 Chimney Cleaning</a><a href="#gallery-carpet" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">🧹 Carpet Cleaning</a><a href="#gallery-garage" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">Garage Door Repair</a><a href="#gallery-car" style="display:inline-flex;align-items:center;gap:6px;background:#f0f4f9;border:1px solid #dde4ef;border-radius:30px;padding:8px 18px;font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;">Car Detailing</a></div>
+<section class="gallery-section" id="gallery-duct">
   <div style="max-width:1200px;margin:0 auto;">
     <div class="gallery-section-header">
-      <div class="gallery-section-icon">🌬️</div>
-      <div>
-        <div class="gallery-section-title">Air Duct Cleaning</div>
-        <div class="gallery-section-count">Before &amp; After — Duct cleaning, debris removal, sanitizing</div>
-      </div>
+      <div class="gallery-section-icon" style="font-size:1.2rem;font-weight:800;">AD</div>
+      <div><div class="gallery-section-title">Air Duct Cleaning</div></div>
     </div>
-    <div class="gallery-grid">
-      <!-- REPLACE src="assets/gallery/..." with your actual image paths -->
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/duct-1.jpg')">
-        <img src="assets/gallery/duct-1.jpg" alt="Air duct cleaning before after 1" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/duct-2.jpg')">
-        <img src="assets/gallery/duct-2.jpg" alt="Air duct cleaning 2" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/duct-3.jpg')">
-        <img src="assets/gallery/duct-3.jpg" alt="Air duct cleaning 3" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/duct-4.jpg')">
-        <img src="assets/gallery/duct-4.jpg" alt="Air duct cleaning 4" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/duct-5.jpg')">
-        <img src="assets/gallery/duct-5.jpg" alt="Air duct cleaning 5" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/duct-6.jpg')">
-        <img src="assets/gallery/duct-6.jpg" alt="Air duct cleaning 6" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-    </div>
+    <div class="gallery-grid"><div class="gallery-item" onclick="openLightbox('assets/gallery/duct-1.jpg')"><img src="assets/gallery/duct-1.jpg" alt="Air Duct Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/duct-2.jpg')"><img src="assets/gallery/duct-2.jpg" alt="Air Duct Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/duct-3.jpg')"><img src="assets/gallery/duct-3.jpg" alt="Air Duct Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/duct-4.jpg')"><img src="assets/gallery/duct-4.jpg" alt="Air Duct Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/duct-5.jpg')"><img src="assets/gallery/duct-5.jpg" alt="Air Duct Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/duct-6.jpg')"><img src="assets/gallery/duct-6.jpg" alt="Air Duct Cleaning" onerror="this.style.display='none'" /></div></div>
   </div>
 </section>
-
-<!-- SECTION: CHIMNEY CLEANING -->
 <section class="gallery-section" id="gallery-chimney" style="background:#f9fafb;">
   <div style="max-width:1200px;margin:0 auto;">
     <div class="gallery-section-header">
-      <div class="gallery-section-icon">🏠</div>
-      <div>
-        <div class="gallery-section-title">Chimney Cleaning</div>
-        <div class="gallery-section-count">Creosote removal, inspection &amp; repair</div>
-      </div>
+      <div class="gallery-section-icon" style="font-size:1.2rem;font-weight:800;">CC</div>
+      <div><div class="gallery-section-title">Chimney Cleaning</div></div>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-1.jpg')">
-        <img src="assets/gallery/chimney-1.jpg" alt="Chimney cleaning 1" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-2.jpg')">
-        <img src="assets/gallery/chimney-2.jpg" alt="Chimney cleaning 2" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-3.jpg')">
-        <img src="assets/gallery/chimney-3.jpg" alt="Chimney cleaning 3" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-4.jpg')">
-        <img src="assets/gallery/chimney-4.jpg" alt="Chimney cleaning 4" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-5.jpg')">
-        <img src="assets/gallery/chimney-5.jpg" alt="Chimney cleaning 5" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-6.jpg')">
-        <img src="assets/gallery/chimney-6.jpg" alt="Chimney cleaning 6" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-    </div>
+    <div class="gallery-grid"><div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-1.jpg')"><img src="assets/gallery/chimney-1.jpg" alt="Chimney Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-2.jpg')"><img src="assets/gallery/chimney-2.jpg" alt="Chimney Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-3.jpg')"><img src="assets/gallery/chimney-3.jpg" alt="Chimney Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-4.jpg')"><img src="assets/gallery/chimney-4.jpg" alt="Chimney Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-5.jpg')"><img src="assets/gallery/chimney-5.jpg" alt="Chimney Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/chimney-6.jpg')"><img src="assets/gallery/chimney-6.jpg" alt="Chimney Cleaning" onerror="this.style.display='none'" /></div></div>
   </div>
 </section>
-
-<!-- SECTION: CARPET CLEANING -->
 <section class="gallery-section" id="gallery-carpet">
   <div style="max-width:1200px;margin:0 auto;">
     <div class="gallery-section-header">
-      <div class="gallery-section-icon">🧹</div>
-      <div>
-        <div class="gallery-section-title">Carpet Cleaning</div>
-        <div class="gallery-section-count">Stain removal, deep extraction &amp; deodorizing</div>
-      </div>
+      <div class="gallery-section-icon" style="font-size:1.2rem;font-weight:800;">CP</div>
+      <div><div class="gallery-section-title">Carpet Cleaning</div></div>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-1.jpg')">
-        <img src="assets/gallery/carpet-1.jpg" alt="Carpet cleaning 1" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-2.jpg')">
-        <img src="assets/gallery/carpet-2.jpg" alt="Carpet cleaning 2" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-3.jpg')">
-        <img src="assets/gallery/carpet-3.jpg" alt="Carpet cleaning 3" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-4.jpg')">
-        <img src="assets/gallery/carpet-4.jpg" alt="Carpet cleaning 4" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-5.jpg')">
-        <img src="assets/gallery/carpet-5.jpg" alt="Carpet cleaning 5" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-6.jpg')">
-        <img src="assets/gallery/carpet-6.jpg" alt="Carpet cleaning 6" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-    </div>
+    <div class="gallery-grid"><div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-1.jpg')"><img src="assets/gallery/carpet-1.jpg" alt="Carpet Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-2.jpg')"><img src="assets/gallery/carpet-2.jpg" alt="Carpet Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-3.jpg')"><img src="assets/gallery/carpet-3.jpg" alt="Carpet Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-4.jpg')"><img src="assets/gallery/carpet-4.jpg" alt="Carpet Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-5.jpg')"><img src="assets/gallery/carpet-5.jpg" alt="Carpet Cleaning" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/carpet-6.jpg')"><img src="assets/gallery/carpet-6.jpg" alt="Carpet Cleaning" onerror="this.style.display='none'" /></div></div>
   </div>
 </section>
-
-<!-- SECTION: GARAGE DOORS -->
 <section class="gallery-section" id="gallery-garage" style="background:#f9fafb;">
   <div style="max-width:1200px;margin:0 auto;">
     <div class="gallery-section-header">
-      <div class="gallery-section-icon">🚪</div>
-      <div>
-        <div class="gallery-section-title">Garage Doors</div>
-        <div class="gallery-section-count">Spring replacement, opener install &amp; full door replacement</div>
-      </div>
+      <div class="gallery-section-icon" style="font-size:1.2rem;font-weight:800;">GD</div>
+      <div><div class="gallery-section-title">Garage Door Repair</div></div>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/garage-1.jpg')">
-        <img src="assets/gallery/garage-1.jpg" alt="Garage door repair 1" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/garage-2.jpg')">
-        <img src="assets/gallery/garage-2.jpg" alt="Garage door repair 2" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/garage-3.jpg')">
-        <img src="assets/gallery/garage-3.jpg" alt="Garage door repair 3" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/garage-4.jpg')">
-        <img src="assets/gallery/garage-4.jpg" alt="Garage door repair 4" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/garage-5.jpg')">
-        <img src="assets/gallery/garage-5.jpg" alt="Garage door repair 5" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/garage-6.jpg')">
-        <img src="assets/gallery/garage-6.jpg" alt="Garage door repair 6" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-    </div>
+    <div class="gallery-grid"><div class="gallery-item" onclick="openLightbox('assets/gallery/garage-1.jpg')"><img src="assets/gallery/garage-1.jpg" alt="Garage Door Repair" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/garage-2.jpg')"><img src="assets/gallery/garage-2.jpg" alt="Garage Door Repair" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/garage-3.jpg')"><img src="assets/gallery/garage-3.jpg" alt="Garage Door Repair" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/garage-4.jpg')"><img src="assets/gallery/garage-4.jpg" alt="Garage Door Repair" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/garage-5.jpg')"><img src="assets/gallery/garage-5.jpg" alt="Garage Door Repair" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/garage-6.jpg')"><img src="assets/gallery/garage-6.jpg" alt="Garage Door Repair" onerror="this.style.display='none'" /></div></div>
   </div>
 </section>
-
-<!-- SECTION: CAR DETAILING -->
 <section class="gallery-section" id="gallery-car">
   <div style="max-width:1200px;margin:0 auto;">
     <div class="gallery-section-header">
-      <div class="gallery-section-icon">🚗</div>
-      <div>
-        <div class="gallery-section-title">Car Detailing</div>
-        <div class="gallery-section-count">Interior &amp; exterior detailing, before &amp; after</div>
-      </div>
+      <div class="gallery-section-icon" style="font-size:1.2rem;font-weight:800;">CD</div>
+      <div><div class="gallery-section-title">Car Detailing</div></div>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/car-1.jpg')">
-        <img src="assets/gallery/car-1.jpg" alt="Car detailing 1" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/car-2.jpg')">
-        <img src="assets/gallery/car-2.jpg" alt="Car detailing 2" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/car-3.jpg')">
-        <img src="assets/gallery/car-3.jpg" alt="Car detailing 3" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/car-4.jpg')">
-        <img src="assets/gallery/car-4.jpg" alt="Car detailing 4" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/car-5.jpg')">
-        <img src="assets/gallery/car-5.jpg" alt="Car detailing 5" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-      <div class="gallery-item" onclick="openLightbox('assets/gallery/car-6.jpg')">
-        <img src="assets/gallery/car-6.jpg" alt="Car detailing 6" onerror="this.parentElement.classList.add('placeholder-loaded')" />
-      </div>
-    </div>
+    <div class="gallery-grid"><div class="gallery-item" onclick="openLightbox('assets/gallery/car-1.jpg')"><img src="assets/gallery/car-1.jpg" alt="Car Detailing" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/car-2.jpg')"><img src="assets/gallery/car-2.jpg" alt="Car Detailing" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/car-3.jpg')"><img src="assets/gallery/car-3.jpg" alt="Car Detailing" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/car-4.jpg')"><img src="assets/gallery/car-4.jpg" alt="Car Detailing" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/car-5.jpg')"><img src="assets/gallery/car-5.jpg" alt="Car Detailing" onerror="this.style.display='none'" /></div><div class="gallery-item" onclick="openLightbox('assets/gallery/car-6.jpg')"><img src="assets/gallery/car-6.jpg" alt="Car Detailing" onerror="this.style.display='none'" /></div></div>
   </div>
 </section>
 
-<!-- CTA BOTTOM -->
 <section class="cta-bottom" style="text-align:center;">
   <h2>Ready to Book a Service?</h2>
   <p>Call us or request a free quote — most jobs scheduled same day.</p>
   <div class="cta-btns" style="justify-content:center;margin-top:24px;">
-    <a href="tel:+12146178689" class="btn-primary">📞 (214) 617-8689 — Call Now</a>
+    <a href="tel:+15133994580" class="btn-primary">📞 (513) 399-4580</a>
     <a href="index.html#contact" class="btn-secondary">✉️ Get Free Quote</a>
   </div>
 </section>
-
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" style="display:inline-block;margin-bottom:12px;">
-        <img src="assets/logo.jpg" alt="TLocal Service Team" style="height:60px;mix-blend-mode:lighten;" />
+      <a href="index.html">
+        <img src="assets/logo.jpg" alt="TLocal Service Team" style="height:70px;mix-blend-mode:lighten;margin-bottom:8px;display:block;" />
       </a>
-      <p>America's trusted home repair, maintenance, and inspection experts. Family owned &amp; operated — Honest, Reliable, Local.</p>
+      <p>America's trusted home service experts. Family owned &amp; operated — Honest, Reliable, Local.</p>
       <div class="footer-contact">
-        <a href="tel:+12146178689">📞 Appointments: (214) 617-8689</a>
+        <a href="tel:+15133994580">📞 (513) 399-4580</a>
         <a href="tel:+15822723573">📞 Complaints: (582) 272-3573</a>
         <a href="mailto:info@tlocalserviceteam.com">✉️ info@tlocalserviceteam.com</a>
       </div>
@@ -289,11 +134,10 @@
       <h4>Services</h4>
       <ul>
         <li><a href="air-duct-cleaning.html">Air Duct Cleaning</a></li>
-        <li><a href="garage-door-repair.html">Garage Door Repair</a></li>
+        <li><a href="chimney-cleaning.html">Chimney Cleaning</a></li>
         <li><a href="carpet-cleaning.html">Carpet Cleaning</a></li>
-        <li><a href="roofing.html">Roofing</a></li>
-        <li><a href="locksmith.html">Locksmith</a></li>
-        <li><a href="home-remodeling.html">Home Remodeling</a></li>
+        <li><a href="garage-door-repair.html">Garage Door Repair</a></li>
+        <li><a href="car-detailing.html">Car Detailing</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -309,9 +153,9 @@
     <div class="footer-col">
       <h4>Get In Touch</h4>
       <ul>
-        <li><a href="tel:+12146178689">📞 Schedule Appointment</a></li>
-        <li><a href="tel:+15822723573">📞 Complaints Line</a></li>
-        <li><a href="index.html#contact">💬 Request a Quote</a></li>
+        <li><a href="tel:+15133994580">📞 Call Now</a></li>
+        <li><a href="tel:+15822723573">📞 Complaints</a></li>
+        <li><a href="index.html#contact">💬 Free Quote</a></li>
       </ul>
     </div>
   </div>
@@ -323,27 +167,16 @@
     </div>
   </div>
 </footer>
-
-<!-- LIGHTBOX -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+<script src="assets/script.js"></script>
 <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
   <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-  <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery image" onclick="event.stopPropagation()" />
+  <img class="lightbox-img" id="lightboxImg" src="" alt="" onclick="event.stopPropagation()" />
 </div>
-
-<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-
-<script src="assets/script.js"></script>
 <script>
-function openLightbox(src) {
-  document.getElementById('lightboxImg').src = src;
-  document.getElementById('lightbox').classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('active');
-  document.body.style.overflow = '';
-}
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+function openLightbox(src){document.getElementById('lightboxImg').src=src;document.getElementById('lightbox').classList.add('active');document.body.style.overflow='hidden';}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
 </script>
 </body>
 </html>
